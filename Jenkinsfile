@@ -6,8 +6,8 @@ pipeline {
             steps {
                 echo 'Building...'
                 // Add your build commands here, e.g.:
-                sh 'npm install'
-                sh 'npm run build'
+                bat 'npm install'
+                bat 'npm run build'
             }
         }
 
