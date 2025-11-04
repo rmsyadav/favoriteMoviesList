@@ -1,7 +1,39 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    /* Core settings */
+    "target": "ES6",                          // Modern JS output
+    "module": "ESNext",                       // Use ES modules
+    "lib": ["DOM", "ES2020"],                 // Include browser + modern JS features
+    "jsx": "react-jsx",                       // React 17+ JSX transform
+
+    /* Module resolution */
+    "moduleResolution": "node",              // Resolve modules like Node.js
+    "baseUrl": "./",                         // Base path for imports
+    "paths": {
+      "*": ["node_modules/*"]                // Optional: fallback resolution
+    },
+
+    /* Interop and compatibility */
+    "esModuleInterop": true,                 // Allow default imports from CommonJS
+    "allowSyntheticDefaultImports": true,    // Allow default imports even if not declared
+    "resolveJsonModule": true,               // Allow importing `.json` files
+    "allowJs": true,                         // Allow JS files in the project
+
+    /* Type checking */
+    "strict": false,                          // Enable all strict type checks
+    "noUnusedLocals": false,                 // Allow unused local variables
+    "noUnusedParameters": false,             // Allow unused function parameters
+    "skipLibCheck": true,                    // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Enforce consistent casing in imports
+
+    /* JSX extensions */
+    "allowImportingTsExtensions": false,      // Allow `.tsx` in import paths
+
+    /* Output control */
+    "noEmit": false,                         // Emit `.js` files
+    "outDir": "./build",                     // Output directory
+    "rootDir": "./src"                       // Source directory
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "build"]
 }
