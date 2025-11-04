@@ -1,0 +1,41 @@
+.image-card {
+  width: 240px;
+  height: 200px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-movie {
+  width: 240px;
+  height: 200px;
+  object-fit: fill;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card {
+  box-shadow: 0 0 12px rgba(154, 150, 150, 0.8);
+  padding: 10px;
+  height: 380px;
+  place-items: center;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+
+.movie-title {
+  display: -webkit-box;              /* Required for line clamping */
+  -webkit-line-clamp: 2;             /* Number of lines to show */
+  -webkit-box-orient: vertical;      /* Vertical orientation */
+  overflow: hidden;                  /* Hide overflow */
+  text-overflow: ellipsis;           /* Add ellipsis */
+  white-space: normal;               /* Fix: 'wrap' is invalid */
+  word-break: break-word;            /* Break long words */
+  text-decoration: none;
+  text-transform: capitalize;
+}
+

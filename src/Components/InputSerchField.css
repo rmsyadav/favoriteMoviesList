@@ -1,0 +1,15 @@
+
+#input-search-field {
+   width: 300px;
+   padding: 10px;
+   font-size: 16px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   outline: none;
+   transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#input-search-field:focus {
+   border: 2px solid rgb(37, 99, 235);
+   box-shadow: 0 0 12px rgb(37, 99, 235, 0.8);
+}

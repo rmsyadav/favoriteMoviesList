@@ -1,0 +1,53 @@
+.movie-card {
+  box-shadow: 0 0 12px rgba(154, 150, 150, 0.8);
+  padding: 10px;
+  place-items: center;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+
+.image {
+  width: 99%;
+  height: 99%;
+  object-fit: fill;
+  outline: none;
+  border-radius: 5px;
+}
+
+.right-contaner {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-inline: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-left: 1px solid #ddd;
+  border-radius: 5%;
+  margin-left: 10px;
+}
+
+.poster {
+  width: 150px;
+  border-radius: 4px;
+}
+
+.movie-info {
+  flex: 1;
+}
+
+.details-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.details-link:hover {
+  text-decoration: underline;
+}
